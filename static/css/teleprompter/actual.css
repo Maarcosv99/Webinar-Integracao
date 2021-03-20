@@ -1,0 +1,295 @@
+.parte-de-baixo {
+    height: 56%;
+    background-color: rgba(15, 15, 15, 0.97);
+  }
+  
+  .div-vue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .parte-de-cima {
+    height: 20%;
+    background-color: rgba(15, 15, 15, 0.97);
+  }
+  
+  .html-embed-12 {
+    width: 25px;
+    height: 25px;
+    margin-left: -3px;
+  }
+  
+  .div-teleprompter {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    padding: 0px;
+    border: 2px solid #303030;
+    border-radius: 7px;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    color: #fff;
+  }
+  
+  .div-teleprompter.ui-widget-content {
+    width: 500px;
+    height: 300px;
+    min-height: auto;
+    min-width: auto;
+    background-color: #181717;
+    cursor: move;
+  }
+  
+  .div-foco-no-texto {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 2;
+    display: none;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  
+  .label-control-teleprompter {
+    margin-bottom: 7px;
+    color: #b1b0b0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .div-block-171 {
+    margin-bottom: 15px;
+  }
+  
+  .div-input-teleprompter {
+    width: 100%;
+    border: 0px solid #000;
+    border-radius: 7px;
+    background-color: #383838;
+    color: #bdbdbd;
+    font-weight: 500;
+  }
+  
+  .div-text-teleprompter {
+    position: relative;
+    left: 0%;
+    top: 0px;
+    right: 0%;
+    bottom: auto;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 35px;
+    -webkit-transition: all 200ms cubic-bezier(.645, .045, .355, 1);
+    transition: all 200ms cubic-bezier(.645, .045, .355, 1);
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .div-block-172 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.18);
+  }
+  
+  .textarea {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin-bottom: 0px;
+    padding: 15% 35px 0px;
+    border: 0px solid #000;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .textarea::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .textarea:-ms-input-placeholder {
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .textarea::-ms-input-placeholder {
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .textarea::placeholder {
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
+  .div-input-control-teleprompter {
+    position: relative;
+    display: block;
+    border-radius: 0px;
+  }
+  
+  .div-controls-teleprompter {
+    position: fixed;
+    left: 1%;
+    top: auto;
+    right: auto;
+    bottom: 2%;
+    width: 250px;
+    padding: 20px 15px 5px;
+    border-radius: 7px;
+    background-color: #292626;
+  }
+  
+  .html-embed-14 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .parte-leitura {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 25%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  
+  .body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #181717;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .div-vue {
+      padding-top: 40px;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+  
+    .div-block-171 {
+      width: 48%;
+    }
+  
+    .div-controls-teleprompter {
+      left: 5%;
+      top: auto;
+      right: 5%;
+      bottom: 2%;
+      display: block;
+      width: 90%;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  
+    .control-butons {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  
+    .div-block-173 {
+      position: fixed;
+      left: auto;
+      top: 1%;
+      right: 1%;
+      bottom: auto;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .div-teleprompter.ui-widget-content {
+      width: 300px;
+    }
+  
+    .div-block-171 {
+      width: 100%;
+    }
+  
+    .div-text-teleprompter {
+      width: auto;
+    }
+  
+    .control-butons {
+      display: block;
+    }
+  }
+  

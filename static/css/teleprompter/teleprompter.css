@@ -1,0 +1,273 @@
+body {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #181717;
+}
+
+.div-vue {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  
+.div-vue:medium {
+    padding-top: 40px;
+    justify-content: flex-start;
+}
+
+.div-teleprompter {
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 300px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-top-color: #303030;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: #303030;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: #303030;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-left-color: #303030;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    font-family: Trebuchet MS;
+    color: hsla(0, 0.00%, 100.00%, 1.00);
+}
+  
+.div-teleprompter.ui-widget-content {
+    width: 500px;
+    height: 300px;
+    min-height: auto;
+    min-width: auto;
+    background-color: #181717;
+    cursor: move;
+}
+  
+.div-teleprompter.ui-widget-content:tiny {
+    width: 300px;
+}
+
+.div-text-teleprompter {
+    position: relative;
+    left: 0%;
+    top: 0px;
+    right: 0%;
+    bottom: auto;
+    z-index: 1;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 35px;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: cubic-bezier(.645, .045, .355, 1);
+    font-size: 20px;
+    line-height: 40px;
+}
+  
+.div-text-teleprompter:tiny {
+    width: auto;
+}
+
+.textarea {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin-bottom: 0px;
+    padding-top: 15%;
+    padding-right: 35px;
+    padding-bottom: 0px;
+    padding-left: 35px;
+    border-top-style: solid;
+    border-top-width: 0px;
+    border-top-color: black;
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-color: black;
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-left-color: black;
+    background-color: transparent;
+    font-family: Trebuchet MS;
+    color: hsla(0, 0.00%, 100.00%, 1.00);
+    font-size: 20px;
+    line-height: 40px;
+}
+  
+.textarea:main_placeholder {
+    color: hsla(0, 0.00%, 100.00%, 1.00);
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.div-foco-no-texto {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 2;
+    display: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.parte-de-cima {
+    height: 20%;
+    background-color: hsla(0, 0.22%, 5.99%, 0.97);
+}
+
+.parte-leitura {
+    display: flex;
+    height: 25%;
+    align-items: center;
+}
+
+.html-embed-12 {
+    width: 25px;
+    height: 25px;
+    margin-left: -3px;
+}
+
+.parte-de-baixo {
+    height: 56%;
+    background-color: rgba(15, 15, 15, 0.97);
+}
+
+.div-controls-teleprompter {
+    position: fixed;
+    left: 1%;
+    top: auto;
+    right: auto;
+    bottom: 2%;
+    width: 250px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: hsla(0, 3.46%, 15.46%, 1.00);
+}
+  
+.div-controls-teleprompter:medium {
+    left: 5%;
+    top: auto;
+    right: 5%;
+    bottom: 2%;
+    display: block;
+    width: 90%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.div-block-172 {
+    display: flex;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: hsla(0, 0.00%, 0.00%, 0.18);
+}
+
+.html-embed-14 {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.control-butons {}
+
+.control-butons:medium {
+  display: flex;
+  justify-content: space-between;
+}
+
+.control-butons:tiny {
+  display: block;
+}
+
+.div-block-171 {
+    margin-bottom: 15px;
+  }
+  
+.div-block-171:medium {
+    width: 48%;
+  }
+  
+.div-block-171:tiny {
+    width: 100%;
+}
+
+.label-control-teleprompter {
+    margin-bottom: 7px;
+    color: hsla(0, 0.50%, 69.18%, 1.00);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.div-input-control-teleprompter {
+    position: relative;
+    display: block;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.div-input-teleprompter {
+    width: 100%;
+    border-top-style: solid;
+    border-top-width: 0px;
+    border-top-color: black;
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 0px;
+    border-bottom-color: black;
+    border-left-style: solid;
+    border-left-width: 0px;
+    border-left-color: black;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    background-color: hsla(0, 0.45%, 21.90%, 1.00);
+    color: hsla(0, 0.00%, 74.00%, 1.00);
+    font-weight: 500;
+}
+

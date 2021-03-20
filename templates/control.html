@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>Controle - Teleprompter</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/control/control.css') }}" />
+</head>
+<body>
+
+    <div id='control'>
+        <div class='control-button'>
+            <img onclick="controlPresentation('faster')" class="button-control control-button-top" src="{{ url_for('static', path='/images/control/button_top.svg') }}" />
+        </div>
+        <div class='control-button-center'>
+            <img onclick="controlPresentation('pass_left')" class="button-control control-button-left" src="{{ url_for('static', path='/images/control/button_left.svg') }}" />
+            <img id="playPause" onclick="controlPresentation('play')" class="button-control" src="{{ url_for('static', path='/images/control/button_play.svg') }}" />
+            <img onclick="controlPresentation('pass_right')" class="button-control control-button-right" src="{{ url_for('static', path='/images/control/button_right.svg') }}" />
+        </div>
+        <div class='control-button'>
+            <img onclick="controlPresentation('slower')" class="button-control" src="{{ url_for('static', path='/images/control/button_down.svg') }}" />
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', path='/js/control/control.js') }}"></script>
+</body>
+</html>

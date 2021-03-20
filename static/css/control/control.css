@@ -1,0 +1,50 @@
+body {
+    background-color: #1e1e1e;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#control {
+    width: 320px;
+}
+
+.control-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-control {
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+}
+
+.control-button-top {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+}
+
+.control-button-left {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+
+.control-button-right {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+}
+
+.control-button-center {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

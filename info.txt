@@ -1,0 +1,2 @@
+PROJECT_KEY=b0aopjt8_QX5AebvHiGrcQZh1HQmgrUzqUjhqyqWq
+PROJECT_ID=b0aopjt8
