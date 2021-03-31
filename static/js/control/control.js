@@ -1,3 +1,9 @@
+if (window.location.protocol == "https:") {
+    var ws_scheme = "wss://";
+  } else {
+    var ws_scheme = "ws://"
+  };
+
 const ws = new WebSocket('ws://' + window.location.host + '/ws')
 
 function controlPresentation(ev) {

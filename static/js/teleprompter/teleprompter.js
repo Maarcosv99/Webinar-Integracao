@@ -19,6 +19,13 @@ var app = new Vue({
   created: function() {
   	window.addEventListener('keyup', this.keyUp);
     document.getElementById('speech').removeAttribute('maxlength');
+
+    if (window.location.protocol == "https:") {
+      var ws_scheme = "wss://";
+    } else {
+      var ws_scheme = "ws://"
+    };
+
     this.connection = new WebSocket('ws://' + window.location.host + '/ws')
 
     setInterval(() => this.connection.send('echo'), 1000)

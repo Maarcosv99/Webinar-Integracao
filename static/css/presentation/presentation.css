@@ -27,6 +27,10 @@ section {
 }
 
 /* Slide */
+#presentation {
+    width: 100%;
+}
+
 #presentation_div {
     display: flex;
     align-items: center;
@@ -38,9 +42,15 @@ section {
 }
 
 #presentation > #all_slides_warpper {
-    transform: scale(1.45) !important;
+    transform: scale(1) !important;
     height: auto !important;
     transform-origin: center !important;
     padding-top: 0 !important;
-    margin-top: -20px !important;
+    margin-top: -30px !important;
+}
+
+.slide {
+    border: 0px solid !important;
+    border-radius: 0 im !important;
+    box-shadow: none !important;
 }
