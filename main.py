@@ -46,13 +46,7 @@ async def websocket_endpoint(websocket: WebSocket):
         try:
             # Aguardando comandos do controle
             receive = await websocket.receive_text()
-            if receive != 'echo':
-                print(receive)
             # Enviando mensagem para toda a sala
             await manager.broadcast({'event': receive})
         except WebSocketDisconnect:
-            await manager.disconnect(websocket)
-        except RuntimeError:
-            await manager.disconnect(websocket)
-        except WSD:
-            await manager.disconnect(websocket)
+            manager.disconnect(websocket)
