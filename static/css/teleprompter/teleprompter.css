@@ -115,8 +115,15 @@ body {
     color: hsla(0, 0.00%, 100.00%, 1.00);
     font-size: 20px;
     line-height: 40px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
-  
+
+.textarea::-webkit-scrollbar {
+    display: none;
+}
+
+
 .textarea:main_placeholder {
     color: hsla(0, 0.00%, 100.00%, 1.00);
     font-size: 20px;
