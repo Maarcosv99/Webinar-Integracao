@@ -8,6 +8,8 @@ var app = new Vue({
       velocidade: 16,
       tamanhoTexto: 25,
       alturaLinha: 40,
+      alturaLeitura: 25,
+      opacidadeLeitura: 1,
       element: document.getElementById('speech'),
       scrolling: null,
       inc: 1,
@@ -20,20 +22,16 @@ var app = new Vue({
   	window.addEventListener('keyup', this.keyUp);
     document.getElementById('speech').removeAttribute('maxlength');
 
-    if (window.location.protocol == "https:") {
-      var ws_scheme = "wss://";
-    } else {
-      var ws_scheme = "ws://"
-    };
-
     this.connection = new WebSocket('ws://' + window.location.host + '/ws')
 
     setInterval(() => this.connection.send('echo'), 1000)
 
     this.connection.onmessage = ((ev) => {
         const response = JSON.parse(ev.data);
-        this.remoteControl(response);
-    })
+        /*this.remoteControl(response);*/
+    });
+
+    $( "#teleprompter").draggable();
   },
   methods: {
       doScroll: function() {
@@ -44,7 +42,7 @@ var app = new Vue({
       	if (!this.tp.scrolling) {
         	this.tp.scrolling = setInterval(() => this.doScroll(), parseInt(this.tp.velocidade));
         }
-        document.getElementById('foco').style.display = 'block';
+        //document.getElementById('foco').style.display = 'block';
       },
       edit: function() {
       	if (this.tp.scrolling) {
@@ -69,16 +67,30 @@ var app = new Vue({
         this.tp.scrolling = null;
         
         setTimeout(() => this.play(), 2000);
+        document.getElementById('foco').style.display = 'block';
         this.tp.inc = 1;
       },
-      move: function() {
-      	$( "#teleprompter").draggable();
+      scrollShow: function() {
+      	document.getElementById('foco').removeAttribute('style');
+        document.getElementById('foco').style.display = 'none !important';
       },
       keyUp: function(event) {
-        if (event.which == '32' || event.which == 32) {
-        	this.pauseInPlay();
+        switch (event.which) {
+          case 39:
+            this.connection.send('next');
+            break;
+          case 37:
+            this.connection.send('prev');
+            break;
+          case 32:
+            this.pauseInPlay();
+            break;
+          case 8:
+            document.getElementById('foco').style.display = 'block';
+            break;
         }
       },
+      /*
       remoteControl: function(ev) {
         switch (ev.event) {
             case 'play':
@@ -95,5 +107,6 @@ var app = new Vue({
                 break;
         }
       }
+      */
     }
   });
