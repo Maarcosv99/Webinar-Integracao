@@ -1,1 +1,0 @@
-{"id":"4c96d025-c1b2-4264-851d-b4adb1250f7b","space":3527,"runtime":"python3.7","name":"slidePrompter","path":"diyxns","project":"b0aopjt8","account":"144798365827","region":"sa-east-1","deps":["fastapi","typing"],"envs":null,"public":true,"log_level":"debug","cron":"","reload_deps":false}
