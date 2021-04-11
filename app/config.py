@@ -9,6 +9,9 @@ class Settings(BaseSettings):
         "http://localhost:8000",
         "http://api.klow.com.br",
         "https://api.klow.com.br",
+        "https://klow.com.br",
+        "https://www.klow.com.br",
+        "https://whispering-lake-36831.herokuapp.com/",
     ]
     
     @validator("BACKEND_CORS_ORIGINS", pre=True)
