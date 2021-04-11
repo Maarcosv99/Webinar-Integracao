@@ -16,5 +16,5 @@ class UserRegister(BaseModel):
     phone_country_code: Optional[str] = '+55'
     phone: str
 
-class UserShow(UserRegister):
-    pass
+class UserShow(BaseModel):
+    message: str

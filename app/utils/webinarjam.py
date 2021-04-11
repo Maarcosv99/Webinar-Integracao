@@ -42,6 +42,6 @@ def register(user: schemas.UserRegister):
         }
     )
     if r.status_code == 200:
-        return user
+        return {'message': 'Success'}
     else:
         return 'error'

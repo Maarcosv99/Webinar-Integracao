@@ -15,7 +15,7 @@ def listSchedulesWebinar():
     """
     return {'schedules': utils.getSchedules()}
 
-@router.post('/', status_code=status.HTTP_201_CREATED, response_model=schemas.UserShow)
+@router.post('/', status_code=status.HTTP_201_CREATED)
 def registerUserInWebinar(user: schemas.UserRegister):
     """
     Registra usuário no webinar
